@@ -1,0 +1,37 @@
+WEB TEKNOLOJİLERİ PROJE ÖDEVİ
+
+Öğrenci Bilgileri:
+
+Ad Soyad: Hüseyin Hajiyev
+Öğrenci No: B251210564
+Üniversite: Sakarya Üniversitesi
+Bölüm: Bilgisayar Mühendisliği
+
+PROJE BİLGİLERİ
+Bu proje, dinamik içerikli kişisel bir web sitesidir. HTML5, CSS3, JavaScript (Native & Vue.js) ve PHP kullanılarak geliştirilmiştir.
+
+1. Canlı Yayın (Hosting) Linki:
+
+https://huseynhajiyev.infinityfreeapp.com/index.php
+
+2. GitHub Deposu:
+
+https://github.com/JeFF-033/Web-Teknolojileri-Proje
+
+GİRİŞ BİLGİLERİ (LOGIN)
+Ödev gereksinimlerine uygun olarak hazırlanan sabit kullanıcı giriş bilgileri aşağıdadır:
+
+Kullanıcı Adı: b251210564@sakarya.edu.tr
+Şifre: b251210564
+
+PROJE ÖZELLİKLERİ VE TEKNİK DETAYLAR
+
+Dinamik Veri Çekme: "İlgi Alanlarım" sayfasında RAWG Video Games Database API kullanılarak oyun verileri anlık olarak çekilmektedir. API kısıtlaması veya bağlantı hatası durumunda "Yedek Liste" (Fallback) sistemi devreye girerek sayfanın boş kalmasını önler.
+
+Form Doğrulama: İletişim formunda hem Native JavaScript hem de Vue.js ile istemci taraflı (client-side) veri doğrulaması yapılmıştır. Onay kutusu (checkbox) işaretlenmeden form gönderimi engellenmiştir.
+
+Oturum Yönetimi: PHP session yapısı kullanılarak login kontrolü sağlanmış ve giriş yapan kullanıcı için özel karşılama mesajı eklenmiştir.
+
+Responsive Tasarım: Site, Bootstrap 5 kullanılarak tüm cihazlarla (mobil, tablet, masaüstü) uyumlu hale getirilmiştir.
+
+Hocam, projenin canlı linkinde bazen ücretsiz hosting servislerinden kaynaklı (CORS veya API engeli) gecikmeler yaşanabilir. Bu gibi durumlar için kod tarafında yedek veri mekanizması kurgulanmıştır. İyi günler dilerim.
