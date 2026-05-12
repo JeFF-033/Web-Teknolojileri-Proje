@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,6 @@
     <title>Web Teknolojileri Projesi | B251210564</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <style>
-        /* CSS dosyasına yazmaya üşenirsen buraya ekle ama ödev için harici dosya şart */
         .navbar-brand { font-weight: bold; }
         body { background-color: #f8f9fa; }
     </style>
