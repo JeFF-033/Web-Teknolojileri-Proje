@@ -1,5 +1,4 @@
-﻿<?php
-// Ödev kuralına göre bilgileri tanımla
+<?php
 $dogru_mail = "b251210564@sakarya.edu.tr";
 $dogru_sifre = "b251210564";
 
@@ -14,7 +13,7 @@ if ($gelen_mail == "" || $gelen_sifre == "") {
 }
 
 if ($gelen_mail == $dogru_mail && $gelen_sifre == $dogru_sifre) {
-    // Başarılı giriş: Hoşgeldiniz [Öğrenci No] mesajı (Önemli detay)
+    // Başarılı giriş: Hoşgeldiniz
     echo "<div style='text-align:center; margin-top:50px; font-family:sans-serif;'>
             <h1>Hoşgeldiniz b2412100001</h1>
             <p>Başarıyla giriş yaptınız. Ana sayfaya yönlendiriliyorsunuz...</p>
