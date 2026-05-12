@@ -1,4 +1,4 @@
-﻿<?php include 'header.php'; ?>
+<?php include 'header.php'; ?>
 
     <div class="container mt-5" id="app">
         <div class="row justify-content-center">
@@ -62,12 +62,12 @@
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script>
-        // 1. NATIVE JS DOĞRULAMA (GÜNCELLENDİ)
+        // 1. NATIVE JS DOĞRULAMA
         function validateNative() {
             const ad = document.getElementById('ad').value;
             const email = document.getElementById('email').value;
             const tel = document.getElementById('tel').value;
-            const onayTiki = document.getElementById('onay').checked; // Onay kutusu kontrolü eklendi
+            const onayTiki = document.getElementById('onay').checked;
             const mailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
             if (!ad || !email || !tel) {
@@ -76,7 +76,7 @@
                 alert("Native JS: Email formatı hatalı!");
             } else if (isNaN(tel)) {
                 alert("Native JS: Telefon sadece rakam olmalı!");
-            } else if (!onayTiki) { // Onay kutusu kontrolü
+            } else if (!onayTiki) {
                 alert("Native JS: Lütfen bilgilerin doğruluğunu onaylayın!");
             } else {
                 alert("Native JS: Başarılı! Form gönderiliyor.");
@@ -84,7 +84,7 @@
             }
         }
 
-        // 2. VUE.JS DOĞRULAMA (GÜNCELLENDİ)
+        // 2. VUE.JS DOĞRULAMA
         const { createApp } = Vue;
         createApp({
             data() {
@@ -95,7 +95,6 @@
             methods: {
                 validateVue() {
                     const mailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    // Onay kontrolü zaten buradaydı ama hata mesajını netleştirdik
                     if (!this.formData.ad || !this.formData.email || !this.formData.tel) {
                         alert("Vue.js: Lütfen tüm alanları doldurun!");
                     } else if (!mailRegex.test(this.formData.email)) {
